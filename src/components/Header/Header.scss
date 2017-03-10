@@ -1,3 +1,14 @@
+@import 'colors';
+
+.app-header {
+  background-color: $primary;
+  height: 85px;
+  padding: 5px 5px 5px 20px;
+  color: white;
+  font-size: large;
+  box-shadow: 0 2px 5px rgba(0,0,0,.26);
+}
+
 .route--active {
   font-weight: bold;
   text-decoration: underline;

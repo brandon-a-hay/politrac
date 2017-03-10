@@ -1,0 +1,66 @@
+@import 'colors';
+
+@mixin prefixed($property, $value) {
+  -webkit-#{$property}: $value;
+  -khtml-#{$property}: $value;
+  -moz-#{$property}: $value;
+  -ms-#{$property}: $value;
+  -o-#{$property}: $value;
+  #{$property}: $value;
+}
+
+.header {
+  font-size: 28;
+  line-height: 1.2;
+  margin: 0 0 1.5rem;
+  padding-left: 20px;
+}
+
+.card-header {
+  display: block;
+  background: #FFFFFF;
+  color: #000000;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.profile-image {
+  border-radius: 50%;
+  max-width: 45%;
+}
+
+.card {
+  flex-grow: 1;
+  flex-basis: 50%;
+  padding: 15px;
+  background-color: #fff;
+  margin: 0 1rem 1.6rem 1rem;
+  border-radius: 2px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.link {
+  display: block;
+  font-size: 1rem;
+  margin: 0 0 .5rem;
+  line-height: 1.5;
+  font-weight: bold;
+  opacity: 1;
+  transition: .2s opacity ease;
+  text-decoration: none;
+  :hover {
+    opacity: 0.5;
+    text-decoration: none;
+  }
+}
+
+.senator-focus {
+  padding: 5px;
+}
+
+.bill-categories {
+  font-size: .85rem;
+  flex-basis: 65%;
+  padding-left: 5px;
+}
